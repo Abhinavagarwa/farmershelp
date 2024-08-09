@@ -1,16 +1,23 @@
+.container{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(190, 232, 128);
+  height: 100vh;
+  width: 100%;
+}
 .main1{
+ padding: 0;
+ color: green;
+}
+.head{
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
-.btn
-{
-  font-size: 30px;
-  padding: 5px;
-  border-radius:35px ;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: none;
-  cursor: pointer;
+.head1{
+  display: flex;
+  justify-content: center;
+}
+.para{
+  font-size: 20px;
+
 }
