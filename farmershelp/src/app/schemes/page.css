@@ -31,3 +31,28 @@
     background-color: #04AA6D;
     color: white;
   }
+  h3{
+    padding: 10px;
+  }
+  p{
+    padding: 10px;
+  }
+  h2{
+    padding: 10px;
+  }
+  .choose{
+    padding: 10px;
+  }
+  .sol{
+    padding: 10px;
+    font-size: 20px;
+  }
+  ul{
+    padding:10px;
+  }
+  .ben{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
