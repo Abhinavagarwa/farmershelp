@@ -1,13 +1,19 @@
+
 .container{
   padding: 0;
   margin: 0;
   background-color: rgb(190, 232, 128);
   height: 100vh;
   width: 100%;
+  background-image: url('../images/background.jpg');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+  
 }
 .main1{
- padding: 0;
+  padding-top:20px;
  color: green;
+ 
 }
 .head{
   display: flex;
@@ -19,5 +25,15 @@
 }
 .para{
   font-size: 20px;
-
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+.contributors{
+  padding: 10px;
+}
+.links{
+  padding: 10px;
+  color:black;
+  font-size:20px;
 }

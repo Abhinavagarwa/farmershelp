@@ -9,8 +9,11 @@
     border: solid 2px;
     text-decoration: none;
     border-radius: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: yellow;
 }
 .btn:hover{
     background-color: rgb(1, 92, 13);
