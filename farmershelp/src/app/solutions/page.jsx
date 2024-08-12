@@ -12,26 +12,40 @@ export default function SoilTest() {
       potassium: '',
       organicMatter: '',
     });
-  
+
+  const [loading, setLoading] = useState(false);
+
+
     const handleChange = (e) => {
+      const { name, value } = e.target;
       setSoilData({
         ...soilData,
-        [e.target.name]: e.target.value,
+        [name]: value, 
       });
+      console.log(`Updated ${name}: ${value}`);  
     };
   
     const handleSubmit = async (e) => {
       e.preventDefault();
-      const response = await fetch('/api/soil-test', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(soilData),
-      });
-      const data = await response.json();
-      alert(JSON.stringify(data));
+      setLoading(true);
+      setResult(null); 
+      try {
+        const response = await fetch('../api/soil-test', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(soilData),
+        });
+        const data = await response.json();
+        setResult(data);
+      } catch (error) {
+        console.error('Error submitting soil data:', error);
+      } finally {
+        setLoading(false);
+      }
     };
+
     return(
         <div>
             <h1 className="head">Farmershelp</h1>
@@ -47,31 +61,34 @@ export default function SoilTest() {
       <form onSubmit={handleSubmit}>
         <label>
           pH:
-          <input type="text" name="pH" value={soilData.pH} onChange={handleChange} />
+          <input type="number" name="pH" value={soilData.pH} onChange={handleChange} />
         </label>
         <hr></hr>
         <label>
           Nitrogen (N):
-          <input type="text" name="nitrogen" value={soilData.nitrogen} onChange={handleChange} />
+          <input type="number" name="nitrogen" value={soilData.nitrogen} onChange={handleChange} />
         </label>
         <hr />
         <label>
           Phosphorus (P):
-          <input type="text" name="phosphorus" value={soilData.phosphorus} onChange={handleChange} />
+          <input type="number" name="phosphorus" value={soilData.phosphorus} onChange={handleChange} />
         </label>
         <hr />
         <label>
           Potassium (K):
-          <input type="text" name="potassium" value={soilData.potassium} onChange={handleChange} />
+          <input type="number" name="potassium" value={soilData.potassium} onChange={handleChange} />
         </label>
         <hr />
         <label>
           Organic Matter:
-          <input type="text" name="organicMatter" value={soilData.organicMatter} onChange={handleChange} />
+          <input type="number" name="organicMatter" value={soilData.organicMatter} onChange={handleChange} />
         </label>
         <hr />
-        <button type="submit">Submit</button>
+        <button type="submit" disabled={loading}>
+        {loading ? 'Submitting...' : 'Submit'}
+        </button>
       </form>
+      {loading && <p>Processing soil data...</p>}
         </div>
     )
 }
