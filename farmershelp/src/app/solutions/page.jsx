@@ -85,7 +85,7 @@ export default function SoilTest() {
         <h3>Soil Report:</h3>
         <p className='resu'>{result}</p>
       {error && <p style={{ color: 'red' }}>{error}</p>}
-        </div>
+        </div> 
         </div>
     )
 }
