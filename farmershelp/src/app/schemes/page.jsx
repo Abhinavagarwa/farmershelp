@@ -54,28 +54,29 @@ export default function LoginPage(){
     };
   
     return(
+      <div>
+      <div class="topnav">
+        <h1 className="head">FarmersHelp</h1>
         <div>
-            <h1 className="head">Farmershelp</h1>
-            <div class="topnav">
-                <Link href="/home">Home</Link>
-                <Link href="/solutions">Solution</Link>
-                <Link href="/organizations">Organizations</Link>
-                <Link href="/aboutus">About us</Link>
-                <Link href="/schemes" class="active">Schemes</Link>
-            </div>
-            <img className="image" src="https://www.strategy-business.com/media/image/44106699_1000x500.jpg" alt="error loading image"></img>
+          <Link href="/home">Home</Link>
+          <Link href="/aboutus">About us</Link>
+          <Link href="/organizations">Organizations</Link>   
+          <Link href="/schemes"  className="active">Schemes</Link>   
+          <Link href="/solutions">Solution</Link>         
+        </div>
+      </div>
             <h2>Private Sector and NGO Initiatives</h2>
             <br></br>
             <h3>1.IIFCO Kisan Agriculture App</h3>
             <ul>
-                <li><h4>Objective:</h4>Empowers farmers with real-time information and agricultural advice.</li>
+                <li><h4>Objective:</h4><p>Empowers farmers with real-time information and agricultural advice.</p></li>
                 <l1><h4>Benefits</h4><p className='ben'>1. Provides weather forecasts, market prices, and farming techniques.<br></br></p><p className='ben'>2.Connects farmers with experts for personalized guidance.</p></l1>
             </ul>
             <br></br>
             <h3>2.Tata Trusts – Digital Agriculture</h3>
             <ul>
-                <li><h4>Objective:</h4><p>Promotes the use of technology in farming.                </p></li>
-                <li><h4>Benefits:</h4><p className='ben'>1. Training programs on digital tools for precision farming.<br></br>2. Access to digital platforms for market linkages and financial services.</p></li>
+                <li><h4>Objective:</h4><p>Promotes the use of technology in farming.  </p></li>
+                <li><h4>Benefits:</h4><p className='ben'>1. Training programs on digital tools for precision farming.<br></br></p><p className='ben'>2. Access to digital platforms for market linkages and financial services.</p></li>
             </ul>
             <br></br>
             <h2>Personalized Schemes</h2>
@@ -135,17 +136,17 @@ export default function LoginPage(){
         <p>No schemes available for the selected state.</p>
       )}
       <br></br>
-      <h3>How to Apply for Schemes:</h3>
+      <h2>How to Apply for Schemes:</h2>
       <br></br>
-      <p>1.Identify the Scheme: Explore the schemes listed above to find those that suit your needs.<br></br> 
-      2.Eligibility Check: Ensure you meet the eligibility criteria for the chosen scheme.<br></br>
-      3.Application Process: Follow the application process detailed under each scheme. You may need to submit necessary documents, either online or at designated centers.<br></br>
-      4.Track Your Application: Many schemes offer online tracking. Keep your reference number handy to monitor the status of your application.
+      <p className='apply'>1. Identify the Scheme: Explore the schemes listed above to find those that suit your needs.<br></br> 
+      2. Eligibility Check: Ensure you meet the eligibility criteria for the chosen scheme.<br></br>
+      3. Application Process: Follow the application process detailed under each scheme. You may need to submit necessary documents, either online or at designated centers.<br></br>
+      4. Track Your Application: Many schemes offer online tracking. Keep your reference number handy to monitor the status of your application.
       </p>
       <br></br>
-      <h3>Need Assistance?</h3>
+      <h2>Need Assistance?</h2>
       <br></br>
-      <p>If you need help navigating these schemes or applying for them, our team is here to assist you. Contact us at +919999999999 or visit our nearest help center.</p>
+      <p className='assistance'>If you need help navigating these schemes or applying for them, our team is here to assist you. Contact us at +919999999999 or visit our nearest help center.</p><br />
         </div>
     )
 }
