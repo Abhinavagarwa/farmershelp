@@ -16,7 +16,7 @@ export default function LoginPage(){
             </div>
             <div class="card-container">                
                 <div class="cards">
-                    <img src="uvs.jpeg" alt="" />
+                    <Image src="/uvs.jpg" alt="" width={100} height={100} />
                     <div class="card-text">
                         <p>
                             <strong>Universal Versatile Society (UVS)</strong><br/><br />
@@ -26,7 +26,7 @@ export default function LoginPage(){
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="Gramya-Resource-Center-for-Women.jpeg" alt="" />
+                    <Image src="/Gramya-Resource-Center-for-Women.jpg" alt="" width={100} height={100}/>
                     <div class="card-text">
                         <p>
                             <strong>Gramya Resource Center for Women</strong><br/><br />
@@ -36,7 +36,7 @@ export default function LoginPage(){
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="Dilasa-Sansatha.jpeg" alt="" />
+                    <Image src="/ds.jpg" alt="" width={100} height={100}/>
                     <div class="card-text">
                         <p>
                         <strong>Professional Assistance for Development Action (PRADAN)</strong><br/><br />
@@ -46,7 +46,7 @@ export default function LoginPage(){
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="End-Poverty.jpeg" alt="" />
+                    <Image src="/End-Poverty.jpg" alt="" width={100} height={100}/>
                     <div class="card-text">
                         <p>
                             <strong>End Poverty</strong><br/><br />
@@ -56,7 +56,7 @@ export default function LoginPage(){
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="Swades-Foundation.jpeg" alt="" />
+                    <Image src="/Swades-Foundation.jpg" alt="" width={100} height={100}/>
                     <div class="card-text">
                         <p>
                             <strong>Swades Foundation</strong><br/><br />
@@ -66,7 +66,7 @@ export default function LoginPage(){
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="MANAVLOK.jpeg" alt="" />
+                    <Image src="/MANAVLOK.jpg" alt="" width={100} height={100}/>
                     <div class="card-text">
                         <p>
                             <strong>Marathwada Navnirman Lokayat (MANAVLOK)</strong><br/><br />
@@ -76,7 +76,7 @@ export default function LoginPage(){
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="WOTR.jpeg" alt="" />
+                    <Image src="/WOTR.jpg" alt="" width={100} height={100}/>
                     <div class="card-text">
                         <p>
                             <strong>Watershed Organisation Trust (WOTR)</strong><br/><br />
@@ -86,7 +86,7 @@ export default function LoginPage(){
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="Vrutti.jpeg" alt="" />
+                    <Image src="/Vrutti.jpg" alt="" width={100} height={100}/>
                     <div class="card-text">
                         <p>
                             <strong>Vrutti</strong><br/><br />
@@ -96,7 +96,7 @@ export default function LoginPage(){
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="pradan.jpeg" alt="" />
+                    <Image src="/pradan.jpg" alt="" width={100} height={100}/>
                     <div class="card-text">
                         <p>
                             <strong>Dilasa Sanstha</strong><br/><br />
@@ -106,7 +106,7 @@ export default function LoginPage(){
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="SeSTA.jpeg" alt="" />
+                    <Image src="/SeSTA.jpg" alt="" width={100} height={100}/>
                     <div class="card-text">
                         <p>
                             <strong>Seven Sisters Development Assistance (SeSTA)</strong><br/><br />
