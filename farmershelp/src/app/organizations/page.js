@@ -16,7 +16,7 @@ export default function LoginPage(){
             </div>
             <div class="card-container">                
                 <div class="cards">
-                    <Image src="/uvs.jpg" alt="" width={100} height={100} />
+                    <Image src="/UVS.jpg" alt="" width={100} height={100} />
                     <div class="card-text">
                         <p>
                             <strong>Universal Versatile Society (UVS)</strong><br/><br />
