@@ -16,8 +16,8 @@ export default function LoginPage(){
       </div>
             <div className='into1'>     
             <p className='intro'>Welcome to FarmersHelp, your trusted partner in navigating the challenges of modern agriculture. We understand that farming is more than just a livelihood — it's the backbone of our communities and a vital part of sustaining our planet. Yet, the journey is not without its hurdles, from financial difficulties to the pressures of adopting sustainable practices.<br></br>
-            Farmers Help is here to empower you with the tools, resources, and support needed to thrive in today’s ever-changing agricultural landscape. Our mission is simple: to provide practical solutions for financial challenges while promoting sustainable farming practices that benefit both you and the environment.<br></br>
-            Whether you're seeking advice on securing loans, exploring grants, learning new farming techniques, or connecting with a community of like-minded farmers, Farmers Help is your one-stop resource. Together, we can cultivate a future where agriculture is both prosperous and sustainable. Let’s grow better, together.<br></br>
+            Farmers Help is here to empower you with the tools, resources, and support needed to thrive in today&apos;s ever-changing agricultural landscape. Our mission is simple: to provide practical solutions for financial challenges while promoting sustainable farming practices that benefit both you and the environment.<br></br>
+            Whether you're seeking advice on securing loans, exploring grants, learning new farming techniques, or connecting with a community of like-minded farmers, Farmers Help is your one-stop resource. Together, we can cultivate a future where agriculture is both prosperous and sustainable. Let&apos;s grow better, together.<br></br>
             </p>
             </div>
             <div className='testimonials'>

@@ -16,7 +16,7 @@ export default function LoginPage(){
             </div>
            <div class='container'>
   <img class='image' src='https://imgs.search.brave.com/tzSube71am5OhN2uXNSULdkIboIgGf3kcbVwWXLxwVE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzIyLzU3LzYz/LzM2MF9GXzYyMjU3/NjMyNF9MRFpTbmpi/aDdib2Z6OGtqZU5R/bXREQjBUUU5mOURl/VC5qcGc' alt='error loading image'/>
-  <p class='intro'>Hi, we the Alpha Coders are here. We aim to solve the problems of the farmers with the help of our website 'FARMERSHELP'</p>
+  <p class='intro'>Hi, we the Alpha Coders are here. We aim to solve the problems of the farmers with the help of our website &quot;FARMERSHELP&quot;</p>
   <p class='welcome'>Welcome to Farmershelp, your dedicated partner in empowering farmers and cultivating success. We are a community-driven platform committed to providing farmers with the resources, knowledge, and support they need to thrive in today’s agricultural landscape.</p>
   <h2 class='heading'>Our Mission:</h2>
   <p class='mission'>At Farmers Help, our mission is to uplift and empower farmers by providing them with the tools and information necessary to optimize their farming practices, increase productivity, and enhance sustainability. We believe that by supporting farmers, we contribute to stronger, more resilient communities and a healthier planet.</p>
