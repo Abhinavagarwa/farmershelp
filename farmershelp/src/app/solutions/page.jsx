@@ -41,51 +41,94 @@ export default function SoilTest() {
     setResult(soiltest);
   }
     return(
-        <div className='container'>
-            <h1 className="head">Farmershelp</h1>
-            <hr></hr>
-            <div class="topnav">
-                <Link href="/home">Home</Link>
-                <Link href="/solutions" class="active">Solution</Link>
-                <Link href="/organizations">Organizations</Link>
-                <Link href="/aboutus">About us</Link>
-                <Link href="/schemes">Schemes</Link>
-            </div>
-            <img className="image" src="https://www.strategy-business.com/media/image/44106699_1000x500.jpg" alt="error loading image"></img>
-            <h3>Steps for the soil test</h3>
-            <p className='steps'>1. Get the soil checked<br></br>
-            2. Go to trusted lab for the test<br></br>
-            3. take the report<br></br>
-            4. Enter the details here</p>
-            <h1 className='test'>Soil Test</h1>
-            <p className='subhead'>We have designed a special thing for Farmers <br></br>This would help them to find what their soil is lacking</p>
-            <h3>Soil Testing</h3>
-            <div className='form'>
+      <div>
+      <div class="topnav">
+        <h1 className="head">FarmersHelp</h1>
         <div>
-          <label>pH Level:<br></br></label>
-          <input type="number" value={pH} onChange={(e) => setPH(e.target.value)} step="0.1" required />
+          <Link href="/home">Home</Link>
+          <Link href="/aboutus">About us</Link>
+          <Link href="/organizations">Organizations</Link>   
+          <Link href="/schemes">Schemes</Link>   
+          <Link href="/solutions" className="active">Solution</Link>         
         </div>
-        <div>
-          <label>Nitrogen (ppm):<br></br></label>
-          <input type="number" value={nitrogen} onChange={(e) => setNitrogen(e.target.value)} required />
-        </div>
-        <div>
-          <label>Phosphorus (ppm):<br></br></label>
-          <input type="number" value={phosphorus} onChange={(e) => setPhosphorus(e.target.value)} required />
-        </div>
-        <div>
-          <label>Potassium (ppm):<br></br></label>
-          <input type="number" value={potassium} onChange={(e) => setPotassium(e.target.value)} required />
-        </div>
-        <div>
-          <label>Organic Matter (%):<br></br></label>
-          <input type="number" value={organicMatter} onChange={(e) => setorganicMatter(e.target.value)} required />
-        </div>
-        <button type="submit" onClick={resultsoil}>Test Soil</button>
-        <h3>Soil Report:</h3>
-        <p className='resu'>{result}</p>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-        </div> 
-        </div>
+      </div>
+        <div className="soil-test-container">
+  <img className="image" src="https://imgs.search.brave.com/hswj2eqCJ_uK0-0tLTJ-DkkcQnHY7XkUp72b4NNeCK4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9mcmVzaGx5LXdh/dGVyZWQtcGxhbnRf/MjMtMjE0NzYwOTc1/OS5qcGc" alt="error loading image" />
+  <div className="steps-container">
+    <h3>STEPS FOR THE SOIL TEST:</h3>
+    <p className="steps">
+      1. Get the soil checked<br />
+      2. Go to trusted lab for the test<br />
+      3. Take the report<br />
+      4. Enter the details here
+    </p>
+  </div>
+  <div className="test-container">
+    <p className="subhead">
+      We have designed a special thing for Farmers <br />
+      This would help them to find what their soil is lacking
+    </p>
+  </div>
+  <div className="full-container">
+  <div className="form-container">
+    <h3>SOIL TESTING:</h3>
+    <form>
+      <div className="form-group">
+        <label>pH Level:</label>
+        <input
+          type="number"
+          value={pH}
+          onChange={(e) => setPH(e.target.value)}
+          step="0.1"
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label>Nitrogen (ppm):</label>
+        <input
+          type="number"
+          value={nitrogen}
+          onChange={(e) => setNitrogen(e.target.value)}
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label>Phosphorus (ppm):</label>
+        <input
+          type="number"
+          value={phosphorus}
+          onChange={(e) => setPhosphorus(e.target.value)}
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label>Potassium (ppm):</label>
+        <input
+          type="number"
+          value={potassium}
+          onChange={(e) => setPotassium(e.target.value)}
+          required
+        />
+      </div>
+      <div className="form-group">
+        <label>Organic Matter (%):</label>
+        <input
+          type="number"
+          value={organicMatter}
+          onChange={(e) => setorganicMatter(e.target.value)}
+          required
+        />
+      </div>
+      <button type="submit" onClick={resultsoil}>
+        Test Soil
+      </button>
+    </form>
+    <h3>SOIL REPORT:</h3>
+    <p className="result">{result}</p>
+    {error && <p style={{ color: 'red' }}>{error}</p>}
+  </div>
+</div>
+</div>
+</div>
     )
 }
