@@ -6,17 +6,21 @@
 }
 .btn{
     font-size: 24px;
-    border: solid 2px;
     text-decoration: none;
     border-radius: 20px;
     padding-left: 34px;
     padding-right: 34px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: yellow;
+    background-color: green;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 .btn:hover{
-    background-color: rgb(1, 92, 13);
-    border-color: rgb(1, 52, 1);
-    color: white;
+    background-color: rgb(118, 190, 10);
+    border-color: rgb(118, 190, 10);
+    color: rgb(61, 8, 8);
+    transform: scale(1.05);
 }
