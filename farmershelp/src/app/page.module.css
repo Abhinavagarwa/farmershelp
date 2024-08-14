@@ -1,39 +1,120 @@
-
-.container{
-  padding: 0;
-  margin: 0;
-  background-color: rgb(190, 232, 128);
-  height: 100vh;
-  width: 100%;
-  background-image: url('../images/background.jpg');
- background-repeat: no-repeat;
- background-size: 100% 100%;
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-image: url(../images/landPg.jpg);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+  }
   
+  .main1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+  }
+  
+  .logo {
+    width: 15vh;
+    cursor: pointer;
+  }
+  
+  .head {
+    color: hwb(0 2% 81% / 0.905);
+    font-size: 10vh;
+    margin-bottom: 20px;
+  }
+  
+  .para {
+    color: #133601;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .links {
+    color: hwb(0 2% 81% / 0.905);
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 20px;
+  }
+  
+  .contributors {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 auto; 
+    display: block; 
+    width: 100%; 
+    text-align: center
+  }
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .head {
+    font-size: 8vh;
+  }
+  .para {
+    font-size: 18px;
+  }
+  .links {
+    font-size: 13px;
+  }
+  .contributors {
+    font-size: 12px;
+  }
 }
-.main1{
-  padding-top:20px;
- color: green;
- 
+
+
+@media (max-width: 992px) {
+  .head {
+    font-size: 6vh;
+  }
+  .para {
+    font-size: 16px;
+  }
+  .links {
+    font-size: 11px;
+  }
+  .contributors {
+    font-size: 10px;
+  }
 }
-.head{
-  display: flex;
-  justify-content: center;
+
+@media (max-width: 768px) {
+  .head {
+    font-size: 4vh;
+  }
+  .para {
+    font-size: 14px;
+  }
+  .links {
+    font-size: 9px;
+  }
+  .contributors {
+    font-size: 12px;
+  }
 }
-.head1{
-  display: flex;
-  justify-content: center;
-}
-.para{
-  font-size: 20px;
-  padding: 10px;
-  padding-top: 20px;
-  text-align: center;
-}
-.contributors{
-  padding: 10px;
-}
-.links{
-  padding: 10px;
-  color:black;
-  font-size:20px;
+
+@media (max-width: 480px) {
+  .head {
+    font-size: 2vh;
+  }
+  .para {
+    font-size: 12px;
+  }
+  .links {
+    font-size: 7px;
+  }
+  .contributors {
+    font-size: 6px;
+  }
 }
