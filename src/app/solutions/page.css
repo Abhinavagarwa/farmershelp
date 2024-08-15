@@ -86,7 +86,7 @@ input[type="number"] {
   border: 1px solid #ccc;
 }
 
-button[type="submit"] {
+button[type="button"] {
   padding: 10px 20px; 
   width: auto; 
   height: 40px;

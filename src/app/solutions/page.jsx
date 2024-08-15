@@ -119,7 +119,7 @@ export default function SoilTest() {
           required
         />
       </div>
-      <button type="submit" onClick={resultsoil}>
+      <button type="button" onClick={resultsoil}>
         Test Soil
       </button>
     </form>
